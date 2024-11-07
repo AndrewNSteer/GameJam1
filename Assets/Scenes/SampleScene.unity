@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 16778668}
   - component: {fileID: 16778667}
+  - component: {fileID: 16778669}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -206,9 +207,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 --- !u!1 &40503404
 =======
+=======
+--- !u!58 &16778669
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16778666}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+>>>>>>> Stashed changes
 --- !u!1 &460389648
 >>>>>>> 66e2d57162ed62c769042632ca14acea9953be4c
 GameObject:
@@ -5412,6 +5451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontal: 0
   vertical: 0
+  turnSpeed: 0
   moveSpeed: 3
 --- !u!212 &2091387745
 SpriteRenderer:
@@ -5495,6 +5535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontal: 0
   vertical: 0
+  turnSpeed: 0
   moveSpeed: 10
 <<<<<<< HEAD
 --- !u!1 &2129290409
