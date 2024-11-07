@@ -15,6 +15,7 @@ public class BulletVel : MonoBehaviour
     {
         
         rb.AddForce(rb.transform.up * speed);
+        Destroy(instance, 20f);
     }
 
     // Update is called once per frame
