@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour
 {
+    public float speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,8 +13,11 @@ public class ShipMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+        float horizontal = Input.GetAxis("Horizontal"); 
+        float vertical = Input.GetAxis("Vertical"); 
+
+        //Vector2 ShipMovement = new Vector2 
     }
 }
