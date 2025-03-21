@@ -13,7 +13,7 @@ public class LaserGun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -28,8 +28,8 @@ public class LaserGun : MonoBehaviour
     void FireWeapon()
     {
         
-        Instantiate(bullet, transform.position, transform.rotation);
-        //shot.velocity = transform.forward * bulletSpeed;
-        
+        var shot = Instantiate(bullet, transform.position, transform.rotation);
+        Destroy(shot, 5f); 
+        //shot.velocity = transform.forward * bulletSpeed;  
     }
 }

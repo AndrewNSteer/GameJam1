@@ -11,7 +11,9 @@ public class ShipMovement : MonoBehaviour
     //public Camera cam;
     private Vector2 moveDirection;
     Rigidbody2D playerRigidbody;
-    [SerializeField] float moveSpeed = 3f;
+    [SerializeField] float moveSpeed = 1f;
+
+    public Vector3 mousePos;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,11 @@ public class ShipMovement : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal"); 
         vertical = Input.GetAxis("Vertical");
         
+
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 rotation = mousePos - transform.position;
+        float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rotZ-90);
         //Vector2 ShipMovement = new Vector2 
     }
     // private void ProcessInput()
